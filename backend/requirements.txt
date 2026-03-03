@@ -1,9 +1,9 @@
 fastapi
 uvicorn
 openai
-langchain
+langchain==0.2.16
 langchain-openai
-langchain-community
+langchain-community==0.2.17
 langchain-text-splitters
 faiss-cpu
 python-multipart
