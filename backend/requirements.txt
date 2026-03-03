@@ -4,6 +4,7 @@ openai
 langchain
 langchain-openai
 langchain-community
+langchain-text-splitters
 faiss-cpu
 python-multipart
 pypdf
@@ -12,3 +13,4 @@ tiktoken
 docx2txt
 python-docx
 gunicorn
+pydantic<2.10
