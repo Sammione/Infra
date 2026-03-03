@@ -13,4 +13,4 @@ tiktoken
 docx2txt
 python-docx
 gunicorn
-pydantic<2.10
+pydantic>=2.0.0
