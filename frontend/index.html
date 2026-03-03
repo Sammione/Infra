@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfraChat | User Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="user-view">
+    <nav>
+        <div class="logo">InfraChat</div>
+        <div style="display: flex; align-items: center; gap: 1.5rem;">
+            <span>User Portal</span>
+            <a href="ceo.html" class="nav-link admin-link">Switch to CEO Dashboard</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="card chat-container">
+            <h2>AI Assistant</h2>
+            <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">
+                I can answer questions based on the official documents provided by the CEO.
+            </p>
+            <div class="chat-messages" id="chatMessages">
+                <div class="message ai">Hello! How can I help you today with information from our internal knowledge
+                    base?</div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="userInput" placeholder="Ask a question...">
+                <button id="sendBtn">
+                    <span id="btnText">Send</span>
+                    <div class="loader" id="loader"></div>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

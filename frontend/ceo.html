@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEO Dashboard | InfraChat</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">InfraChat</div>
+        <div style="display: flex; align-items: center; gap: 1.5rem;">
+            <span>Welcome, <strong>CEO</strong></span>
+            <a href="index.html" class="nav-link">Switch to User Portal</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <aside class="card">
+            <h2>Document Management</h2>
+            <div class="upload-zone" id="uploadZone">
+                <i class="upload-icon">📁</i>
+                <p>Drag & Drop PDFs, DOCX or click to upload</p>
+                <input type="file" id="fileInput" hidden accept=".pdf,.docx,.txt">
+            </div>
+            <div id="uploadStatus" style="margin-top: 10px; font-size: 0.8rem;"></div>
+
+            <h3 style="margin: 1.5rem 0 1rem; color: var(--text-muted);">Uploaded Knowledge</h3>
+            <ul class="file-list" id="fileList">
+                <!-- Files will be listed here -->
+            </ul>
+        </aside>
+
+        <section class="card chat-container">
+            <div class="chat-header">
+                <h2>AI Assistant</h2>
+                <span class="status-indicator">Online</span>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+                <div class="message ai">
+                    <div class="avatar">AI</div>
+                    <div class="content">Hello CEO! I'm your memory-enhanced assistant. I remember our conversation and
+                        can answer questions about your uploaded documents.</div>
+                </div>
+            </div>
+            <div class="chat-input-wrapper">
+                <div class="chat-input">
+                    <textarea id="userInput" placeholder="Message InfraChat..." rows="1"></textarea>
+                    <button id="sendBtn">
+                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2"
+                            fill="none">
+                            <line x1="22" y1="2" x2="11" y2="13"></line>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                        </svg>
+                        <div class="loader" id="loader"></div>
+                    </button>
+                </div>
+                <div class="input-footer">InfraChat can make mistakes. Check important info.</div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

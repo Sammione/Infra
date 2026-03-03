@@ -1,0 +1,18 @@
+# Environment variables
+backend/.env
+
+# Python caching
+__pycache__/
+*.pyc
+
+# Data & Documents
+backend/uploads/
+backend/faiss_index/
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
