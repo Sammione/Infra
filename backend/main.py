@@ -45,10 +45,7 @@ async def get_files():
     files = rag_engine.list_files(UPLOAD_DIR)
     return {"files": files}
 
-# Serve frontend (static files) - Optional if we run frontend separately, 
-# but easier for the user to have it integrated.
-# I'll keep them separate for now but allow index.html to be served.
-app.mount("/frontend", StaticFiles(directory="../frontend"), name="frontend")
+# Frontend is served by Vercel, so we don't need to mount it here.
 
 if __name__ == "__main__":
     import uvicorn
